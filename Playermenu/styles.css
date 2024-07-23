@@ -35,6 +35,7 @@ body {
     font-weight: 400;
     font-size: 25px;
     margin-bottom: 20px; /* Add space below the title */
+    color: red;
 }
 
 /* Style the horizontal rule */
@@ -128,5 +129,5 @@ body {
 }
 
 /* #checkbox1, #checkbox2 {
-    color: red;
+    border: 1px solid white;
 } */
