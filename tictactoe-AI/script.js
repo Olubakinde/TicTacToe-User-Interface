@@ -261,6 +261,18 @@ function trainAI() {
     aiMove();
 }
 
+// Retrieve the username from localStorage
+const storedUsername = localStorage.getItem('name');
+
+if (storedUsername) {
+    console.log(`Stored Username: ${storedUsername}`);
+    // Use the stored username as needed, for example:
+    document.getElementById('welcomeMessage').innerText = `${storedUsername}`;
+} else {
+    console.log('No username found in localStorage.');
+}
+
+
 // Event listener for restart button
 document.getElementById("reset").addEventListener("click", restart);
 

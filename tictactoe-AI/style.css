@@ -123,3 +123,18 @@ hr {
         padding: 8px 16px; /* Adjust button padding */
     }
 }
+
+#welcomeMessage {
+    color: white;
+    font-size: 25px;
+}
+
+#welcomeMessage2{
+    color: white;
+    font-size: 25px;
+}
+
+#val {
+    display: flex;
+    justify-content: space-between;
+}
