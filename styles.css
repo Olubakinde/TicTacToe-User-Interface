@@ -24,8 +24,8 @@ body {
     display: flex; /* Optional: if you want to center text inside */
     justify-content: center; /* Center text horizontally */
     align-items: center; /* Center text vertically */
-    color: white; /* Text color */
-    font-size: 20px; /* Text size */
+    color: red; /* Text color */
+    font-size: 30px; /* Text size */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Light text shadow */
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); /* Shadow effect */
     cursor: pointer; /* Pointer cursor on hover */
