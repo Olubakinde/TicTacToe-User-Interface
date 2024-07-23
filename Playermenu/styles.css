@@ -68,6 +68,10 @@ body {
     transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
+#signup input[type="text"]:hover {
+    border-color: #415ca5;
+}
+
 .checkbox-group input[type="checkbox"] {
     margin-right: 10px; /* Space between checkbox and label */
 }
