@@ -1,0 +1,33 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the body to use Flexbox to center its children */
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #001653; /* Cooler blue background color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Global font family */
+    color: #f0f0f0; /* Light text color */
+}
+
+#signup {
+    height: 450px;
+    width: 350px;
+    border: 1px solid white;
+    padding: 70px;
+    border-radius: 40px;
+    background-color: #062363;
+}
+
+#signup p {
+    justify-content: center;
+    display: flex;
+    font-weight: 400;
+    font-size: 25px;
+}

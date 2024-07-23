@@ -1,0 +1,44 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the body to use Flexbox to center its children */
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #001653; /* Cooler blue background color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Global font family */
+}
+
+/* Style the #center div */
+#center {
+    background-color: #002a85; /* Cooler blue color */
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    display: flex; /* Optional: if you want to center text inside */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    color: white; /* Text color */
+    font-size: 20px; /* Text size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Light text shadow */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); /* Shadow effect */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s ease; /* Smooth transition for animation */
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+/* Add a click animation */
+#center:active {
+    transform: scale(0.9); /* Scale down the div */
+}
+
+a {
+    text-decoration: none;
+}
