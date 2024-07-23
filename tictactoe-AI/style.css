@@ -125,13 +125,13 @@ hr {
 }
 
 #welcomeMessage {
-    color: white;
-    font-size: 25px;
+    color: red;
+    font-size: 20px;
 }
 
 #welcomeMessage2{
-    color: white;
-    font-size: 25px;
+    color: red;
+    font-size: 20px;
 }
 
 #val {
