@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #001653;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 100%;
+    max-width: 500px;
+    height: 2px;
+    background-color: #333;
+    border: none;
+    margin: 20px auto;
+}
+
+#board {
+    width: 420px;
+    height: 420px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border: 5px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.tile {
+    width: 138px; /* Ensures three equal columns */
+    height: 138px; /* Ensures three equal rows */
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.tile:hover {
+    background-color: #f0f0f0;
+}
+
+.horizontal-line {
+    border-bottom: 3px solid #333;
+}
+
+.vertical-line {
+    border-right: 3px solid #333;
+}
+
+.winner {
+    background-color: Red; /* Red  */
+    color: white;
+    transition: background-color 0.3s ease;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#reset {
+    background-color: #dc3545; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#reset:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
