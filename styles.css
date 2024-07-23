@@ -17,7 +17,7 @@ body {
 
 /* Style the #center div */
 #center {
-    background-color: #002a85; /* Cooler blue color */
+    background-color: #062363; /* Cooler blue color */
     border-radius: 50%;
     height: 250px;
     width: 250px;
@@ -32,6 +32,10 @@ body {
     transition: transform 0.3s ease; /* Smooth transition for animation */
     text-decoration: none;
     border: 1px solid white;
+}
+
+#center:hover {
+    transform: scale(1.05);
 }
 
 /* Add a click animation */

@@ -16,18 +16,109 @@ body {
     color: #f0f0f0; /* Light text color */
 }
 
+/* Style the signup div */
 #signup {
-    height: 450px;
+    height: 330px;
     width: 350px;
     border: 1px solid white;
-    padding: 70px;
+    padding: 40px 30px; /* Adjust padding for better spacing */
     border-radius: 40px;
     background-color: #062363;
+    animation: scaleUp 0.5s ease-out; /* Add scale-up animation on load */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
+/* Center the text inside the signup div */
 #signup p {
     justify-content: center;
     display: flex;
     font-weight: 400;
     font-size: 25px;
+    margin-bottom: 20px; /* Add space below the title */
+}
+
+/* Style the horizontal rule */
+#signup hr {
+    border: 0;
+    height: 1px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px; /* Add space below the hr */
+}
+
+/* Style the input label */
+#signup label {
+    display: block;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 10px; /* Add space below the label */
+}
+
+/* Style the input field */
+#signup input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #f0f0f0; /* Border color matching the design */
+    border-radius: 15px;
+    background-color: #062363; /* Match the background color of the div */
+    color: white; /* White text color */
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+/* Style the checkbox group */
+.checkbox-group {
+    display: flex;
+    justify-content: space-between; /* Space out the checkboxes */
+    margin-bottom: 20px; /* Add vertical margin */
+}
+
+/* Style the labels and checkboxes */
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #f0f0f0; /* Light text color */
+}
+
+/* Define the scale-up animation */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8); /* Start at 80% size */
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        transform: scale(1); /* End at 100% size */
+        opacity: 1; /* End fully opaque */
+    }
+}
+
+/* Input field focus effect */
+#signup input[type="text"]:focus {
+    outline: none; /* Remove default outline */
+    color: white;
+    background-color: #083c96; /* Slightly darker background on focus */
+}
+
+/* Style the start button */
+#signup button {
+    margin-bottom: 70%px;
+    width: 100%; /* Full width of the parent container */
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #f0f0f0; /* Button color */
+    color: #062363; /* Button text color */
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for color and scale */
+}
+
+/* Button hover effect */
+#signup button:hover {
+    background-color: #d0d0d0; /* Slightly darker button color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
