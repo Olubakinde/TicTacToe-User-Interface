@@ -14,8 +14,8 @@ h1 {
 hr {
     width: 100%;
     max-width: 500px;
-    height: 2px;
-    background-color: #333;
+    height: 1px;
+    background-color: rgb(171, 165, 165);
     border: none;
     margin: 20px auto;
 }
@@ -26,8 +26,8 @@ hr {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: #ffffff;
-    border: 5px solid #333;
+    background-color: #062974;
+    border: 2px solid black;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
@@ -46,6 +46,7 @@ hr {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 
     user-select: none;
@@ -56,15 +57,16 @@ hr {
 }
 
 .tile:hover {
-    background-color: #f0f0f0;
+    border-radius: 10px;
+    background-color: #37579c;
 }
 
 .horizontal-line {
-    border-bottom: 3px solid #333;
+    border-bottom: 3px solid black;
 }
 
 .vertical-line {
-    border-right: 3px solid #333;
+    border-right: 3px solid black;
 }
 
 .winner {

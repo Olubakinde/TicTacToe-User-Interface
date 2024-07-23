@@ -122,7 +122,7 @@ function markWinningTiles(r1, c1, r2, c2, r3, c3) {
     gameOver = true;
     setTimeout(function() {
         alert("Player " + board[r1][c1] + " wins!");
-    }, 100); // Delay alert to allow last tile to render
+    }, 700); // Delay alert to allow last tile to render
 }
 
 // Function to handle AI's move
