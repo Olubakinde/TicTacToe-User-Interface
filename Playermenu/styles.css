@@ -1,11 +1,11 @@
-/* Reset margin and padding for all elements */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set the body to use Flexbox to center its children */
+/* Body Styling */
 body {
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -16,7 +16,7 @@ body {
     color: #f0f0f0; /* Light text color */
 }
 
-/* Style the signup div */
+/* Signup Container Styling */
 #signup {
     height: 360px;
     width: 380px;
@@ -28,7 +28,7 @@ body {
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
-/* Center the text inside the signup div */
+/* Centering Text */
 #signup p {
     justify-content: center;
     display: flex;
@@ -38,7 +38,7 @@ body {
     color: red;
 }
 
-/* Style the horizontal rule */
+/* Horizontal Rule Styling */
 #signup hr {
     border: 0;
     height: 1px;
@@ -46,7 +46,7 @@ body {
     margin-bottom: 20px; /* Add space below the hr */
 }
 
-/* Style the input label */
+/* Input Label Styling */
 #signup label {
     display: block;
     font-weight: 300;
@@ -54,7 +54,7 @@ body {
     margin-bottom: 10px; /* Add space below the label */
 }
 
-/* Style the input field */
+/* Input Field Styling */
 #signup input[type="text"] {
     display: flex;
     justify-content: center;
@@ -73,23 +73,24 @@ body {
     border-color: #415ca5;
 }
 
+/* Checkbox Group Styling */
 .checkbox-group input[type="checkbox"] {
     margin-right: 10px; /* Space between checkbox and label */
 }
 
-/* Style the checkbox group */
+/* Checkbox Group Layout */
 .checkbox-group {
     display: flex;
     justify-content: space-between; /* Space out the checkboxes */
     margin-bottom: 20px; /* Add vertical margin */
 }
 
-/* Style the labels and checkboxes */
+/* Checkbox Labels Styling */
 .checkbox-group label {
     font-size: 80px;
 }
 
-/* Define the scale-up animation */
+/* Scale-Up Animation */
 @keyframes scaleUp {
     from {
         transform: scale(0.8); /* Start at 80% size */
@@ -101,14 +102,14 @@ body {
     }
 }
 
-/* Input field focus effect */
+/* Input Field Focus Effect */
 #signup input[type="text"]:focus {
     outline: none; /* Remove default outline */
     color: white;
     background-color: #083c96; /* Slightly darker background on focus */
 }
 
-/* Style the start button */
+/* Button Styling */
 #signup button {
     margin-bottom: 70%px;
     width: 100%; /* Full width of the parent container */
@@ -122,12 +123,67 @@ body {
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for color and scale */
 }
 
-/* Button hover effect */
+/* Button Hover Effect */
 #signup button:hover {
     background-color: #d0d0d0; /* Slightly darker button color on hover */
     transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
 
-/* #checkbox1, #checkbox2 {
-    border: 1px solid white;
-} */
+/* Responsive Design */
+@media (max-width: 768px) {
+    #signup {
+        height: auto; /* Adjust height to auto */
+        width: 90%; /* Make the width responsive */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    #signup p {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    #signup label {
+        font-size: 16px; /* Adjust label font size */
+    }
+
+    #signup input[type="text"] {
+        width: 100%; /* Make input fields full-width */
+        font-size: 14px; /* Adjust font size for input fields */
+    }
+
+    .checkbox-group {
+        flex-direction: column; /* Stack checkboxes vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .checkbox-group label {
+        font-size: 60px; /* Adjust font size for checkboxes */
+    }
+
+    #signup button {
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust font size for button */
+    }
+}
+
+@media (max-width: 480px) {
+    #signup p {
+        font-size: 18px; /* Further reduce font size */
+    }
+
+    #signup label {
+        font-size: 14px; /* Further reduce label font size */
+    }
+
+    #signup input[type="text"] {
+        font-size: 12px; /* Further reduce font size */
+    }
+
+    .checkbox-group label {
+        font-size: 50px; /* Further reduce checkbox font size */
+    }
+
+    #signup button {
+        padding: 8px; /* Further adjust padding */
+        font-size: 14px; /* Further reduce button font size */
+    }
+}
